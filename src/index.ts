@@ -3,7 +3,6 @@ import dotenv from "dotenv"
 import mongoose from "mongoose"
 import ProductRoutes from "./routes/product"
 import path from "path"
-import AuthMiddleware from "./middleware/auth"
 dotenv.config()
 const app = express()
 
