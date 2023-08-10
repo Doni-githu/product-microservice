@@ -1,7 +1,6 @@
 import express from "express"
 import dotenv from "dotenv"
 import mongoose from "mongoose"
-import amqp from "amqplib"
 import ProductRoutes from "./routes/product"
 import path from "path"
 import AuthMiddleware from "./middleware/auth"

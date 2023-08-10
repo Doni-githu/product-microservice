@@ -11,7 +11,7 @@ export default async function (req: IRequest, res: Response, next: NextFunction)
         })
         return
     } else {
-        axios.get('http://localhost:8000/api/auth/auth', {
+        axios.get('https://auth-microservices.onrender.com/api/auth/auth', {
             headers: { Authorization: req.headers.authorization }
         }).then((res) => {
             req.user = res.data
