@@ -19,7 +19,7 @@ app.use("/api/product", ProductRoutes)
 
 function Run(): void {
     const PORT = process.env.PORT || 9000
-    mongoose.connect(process.env.MONGO_URI)
+    mongoose.connect(process.env.MONGO_GLOBAL_URI)
         .then((res) => console.log('Mongo DB connect in product service'))
         .catch((err) => console.log(`Mongo DB could not connected in auth service, because ${err}`))
     app.listen(PORT, () => {
