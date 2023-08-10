@@ -12,8 +12,6 @@ app.use(express.static(path.join(__dirname, '..', 'public', 'images')))
 
 app.use(express.json())
 
-
-app.use(AuthMiddleware)
 app.use("/api/product", ProductRoutes)
 
 function Run(): void {
