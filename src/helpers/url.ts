@@ -1,2 +1,2 @@
-const url = "http://localhost:9000"
+const url = "https://product-microservice-idr8.onrender.com"
 export default url
